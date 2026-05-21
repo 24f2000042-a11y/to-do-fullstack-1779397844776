@@ -1,0 +1,75 @@
+/* Modern Blue Theme */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: #0066cc;
+}
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.add-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.add-form button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+.todo-list li span {
+  cursor: pointer;
+}
+.todo-list li .delete {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.error {
+  color: #e74c3c;
+  text-align: center;
+}
+.loading {
+  text-align: center;
+  color: #0066cc;
+}
